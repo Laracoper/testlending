@@ -1,0 +1,54 @@
+.header {
+    padding: 26px 0;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header__container {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__logo {
+    display: flex;
+    flex: 0 0 245px;
+    align-items: center;
+    
+}
+
+.header__img {
+    margin-right: 1px;
+}
+
+.header__img svg{
+    
+    height: 26px;
+}
+
+.header__text {
+    color: var(--black);
+    font-family: "Golos Text", sans-serif;
+    font-weight: 700;
+    position: relative;
+    top: -2px;
+    line-height: 100%;
+}
+
+@media (max-width:767.98px) {
+    .header__img {
+        margin-right: 1px;
+    }
+    .header__img svg{
+        height: 23px;
+        
+    }
+    .header__text {
+        font-size: 14px;
+        position: relative;
+        left: -9px;
+    }
+}

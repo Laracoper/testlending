@@ -1,0 +1,73 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(vars.css);
+@import url(stut.css);
+@import url(block-one.css);
+@import url(block-two.css);
+@import url(block-three.css);
+@import url(block-four.css);
+@import url(swiper.min.css);
+@import url(block-five.css);
+@import url(footer.css);
+
+
+
+[class*="__container"] {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+
+}
+
+._link {
+    color: rgb(48, 87, 162);
+    font-size: 20px;
+    line-height: 120%;
+}
+
+._title {
+    font-size: 54px;
+    font-weight: 400;
+    font-family: Merriweather, sans-serif;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+._content {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: Merriweather;
+    line-height: 135%;
+    text-transform: uppercase;
+}
+
+._content-red {
+    color: var(--red);
+    font-weight: 700;
+}
+
+@media (max-width:767.98px) {
+    ._content {
+        font-size: 28px;
+    }
+
+    ._title {
+        font-size: 36px;
+        line-height: 110%;
+    }
+
+    .link {
+        color: rgb(48, 87, 162);
+        font-size: 18px;
+        line-height: 120%;
+    }
+}
+
+img {
+    display: block;
+}

@@ -1,0 +1,241 @@
+.block-one {
+    position: relative;
+}
+
+.block-one__container {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.block-one__text {
+    position: relative;
+    z-index: 2;
+    max-width: 542px;
+    padding: 120px 0 0 0;
+}
+
+.block-one__bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block-one__bg-mobile {
+    display: none;
+}
+
+.block-one__bg-mobile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block-one__bg img {}
+
+.block-one__title {
+    color: rgb(49, 49, 49);
+    font-family: Merriweather;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.block-one__subtitle {
+    margin-bottom: 40px;
+    color: rgb(49, 49, 49);
+    font-family: Golos Text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+.block-one__btns {
+    z-index: 2;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 190px;
+}
+
+.block-one__btn {
+    padding: 20px 40px;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid var(--black);
+    color: var(--black);
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+.block-one__btn:hover {
+    background-color: var(--black);
+    color: aliceblue;
+}
+
+.block-one__btn_black {
+    margin-right: 16px;
+    background-color: var(--black);
+    color: aliceblue;
+
+}
+
+.block-one__btn_black:hover {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    color: var(--black);
+}
+
+.block-one__text-center {
+    position: relative;
+    left: 91px;
+}
+
+.block-one__text-right {
+    position: relative;
+    right: -11%;
+}
+
+.block-one__red-line {
+    background-color: var(--red);
+    z-index: 2;
+    position: relative;
+    padding: 18px 0;
+    color: aliceblue;
+    font-size: 22px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.block-one__red-linetext {
+    padding-left: 15px;
+    animation-name: go;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes go {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -200%;
+    }
+}
+
+.block-one__red-linetext:not(:last-child) {
+    margin-right: 50px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.block-one__red-linetext::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: aliceblue;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    z-index: 2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+@media (max-width:767.98px) {
+    .block-one__bg {
+        display: none;
+    }
+
+    .block-one__bg-mobile {
+        display: block;
+    }
+
+    .block-one__text {
+        padding: 80px 0 0 0;
+    }
+
+    .block-one__title {
+        color: rgb(49, 49, 49);
+        font-family: Merriweather;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 110%;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    .block-one__btns {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .block-one__btn {
+        user-select: none;
+        
+    }
+
+    .block-one__btn_black {
+        margin-right: 0px;
+        margin-bottom: 8px;
+    }
+
+    .block-one__btn_bottom {
+        background-color: rgb(233, 222, 212);
+        border: 2px solid rgb(233, 222, 212);
+    }
+
+    .block-one__text-center {
+        position: relative;
+        left: 0px;
+    }
+
+    .block-one__text-right {
+        position: relative;
+        right: 0%;
+    }
+}
+
+@media (max-width:390px) {
+    .block-one__text-center {
+        position: relative;
+        left: 60px;
+    }
+
+    .block-one__text-right {
+        position: relative;
+        right: -5%;
+    }
+}
